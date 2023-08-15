@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://khavrat.github.io/giard-design/src",
+  "homepage": "https://khavrat.github.io/giard-design",
   "scripts": {
     "build-css": "npx tailwindcss -i ./src/input.css -o ./public/output.css --watch"
   },
