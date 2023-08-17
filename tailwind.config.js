@@ -26,14 +26,17 @@ module.exports = {
       xl: "28px",
       "4xl": "40px",
       "5xl": "48px",
-      "6xl": "60px",
+      "6xl": "56px",
     },
     colors: {
       brand: "#1B5B31",
       secondBrand: "#65A30D",
+      primaryBg: "#F5F0EC",
       secondaryBg: "#DCC1AB",
       modalBg: "#FFFFFF",
       hoverBg: "#F7FEE7",
+      transparent: "transparent",
+      textColor: "#111111"
     },
     extend: {},
   },

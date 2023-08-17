@@ -16,7 +16,7 @@
     console.log('refs.body :>> ', refs.body);
     refs.modal.classList.toggle("hidden");
     refs.modalBackdrop.classList.toggle("hidden");
-    refs.body.classList.toggle("no-scroll");
+    refs.body.classList.toggle("overflow-hidden");
   }
 
   function handleBackdropClick(e) {
