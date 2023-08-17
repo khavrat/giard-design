@@ -38,7 +38,8 @@ module.exports = {
       transparent: "transparent",
       textColor: "#111111"
     },
-    extend: {},
+    extend: {
+    },
   },
   plugins: [],
 };
