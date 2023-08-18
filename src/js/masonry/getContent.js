@@ -1,7 +1,7 @@
 const BASE_URL = "https://pixabay.com/api/";
 const API_KEY = "33239789-edeb40e5557373312058accfd";
-const perPage = "9";
-const currentPage = "1";
+const perPage = 9;
+let currentPage = 1;
 
 async function fetchImages() {
   try {
@@ -35,3 +35,17 @@ async function getContent() {
 
 getContent();
 
+const rollBtn = document.querySelector("#rollGalery");
+rollBtn.addEventListener("click", getNextContent);
+
+function toggleCurrentPage() {
+  currentPage = currentPage === 1 ? currentPage + 1 : currentPage - 1;
+}
+
+function getNextContent(e) {
+  e.preventDefault();
+
+  toggleCurrentPage();
+  console.log('currentPage :>> ', currentPage);
+  // getContent();
+}

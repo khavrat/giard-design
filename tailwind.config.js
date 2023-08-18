@@ -36,10 +36,9 @@ module.exports = {
       modalBg: "#FFFFFF",
       hoverBg: "#F7FEE7",
       transparent: "transparent",
-      textColor: "#111111"
+      textColor: "#111111",
     },
-    extend: {
-    },
+    extend: {},
   },
   plugins: [],
 };
