@@ -542,21 +542,25 @@
             >
           </h3>
         </div>
+        <!-- <div class="animate-spin w-[200px] h-[200px] hidden" id="loader">
+          <img src="./src/images/loader/care.png" alt="loading" width="50" height="50">
+        </div> -->
         <div
-          class="mt-[96px] grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
+          class="mt-[96px] grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 toggle-value-content"
           id="masonry"
         ></div>
         <div
-          class="inset-x-0 absolute bottom-0 pt-64 pb-11 flex justify-center bg-gradient-to-t from-secondaryBg dark:from-modalBg"
+          class="inset-x-0 absolute bottom-0 pt-64 pb-11 flex justify-center bg-gradient-to-t from-secondaryBg dark:from-modalBg" id="smoke"
         >
           <button
-          type="submit"
-          id="rollGalery"
-            class="inline-flex rounded-full inline-flex items-center gap-x-2 lg:px-6 sm:px-4 lg:py-3 sm:py-2 bg-nhfysparent border dorder-textColor font-sans lg:text-base sm:text-sm text-textColor leading-1.5 cursor-pointer hover:border-secondBrand hover:text-secondBrand"
+            type="button"
+            id="rollGalery"
+            class="inline-flex rounded-full inline-flex items-center gap-x-2 lg:px-6 sm:px-4 lg:py-3 sm:py-2 bg-nhfysparent border dorder-textColor font-sans lg:text-base sm:text-sm text-textColor leading-1.5 cursor-pointer hover:border-secondBrand hover:text-secondBrand pointer-events-auto"
           >
             <span>Rozwiń</span>
             <svg
               class="h-5 w-5"
+              id="arrow"
               viewBox="0 0 20 20"
               fill="currentColor"
               aria-hidden="true"
@@ -845,7 +849,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
 
     <script src="./src/js/masonry/getContent.js" type="module"></script>
-    <script src="./src/js/masonry/masonry.js" type="module"></script>
   </body>
 </html>
 
