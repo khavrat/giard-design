@@ -15,12 +15,13 @@
     <title>Giard Design</title>
   </head>
   <body class="h-screen">
-    <header class="container">
-      <div
-        class="flex justify-between items-center py-6 max-md:py-4 max-sm:py-3"
-      >
+    <header class=" bg-modalBg fixed  z-50">
+      <div class="container   flex justify-between items-center">
         <!--Logo-->
-        <a class="hover:text-brand" href="./index.html">
+        <a
+          class="inline-block py-6 max-md:py-4 max-sm:py-3 transition duration-150 ease-in hover:text-brand"
+          href="./index.html"
+        >
           <svg
             width="115"
             height="20"
@@ -35,7 +36,11 @@
           </svg>
         </a>
         <div class="block ml-auto md:hidden">
-          <button id="burger-menu" type="button" class="hover:text-brand">
+          <button
+            id="burger-menu"
+            type="button"
+            class="transition duration-150 ease-in hover:text-brand"
+          >
             <svg
               id="open-menu"
               xmlns="http://www.w3.org/2000/svg"
@@ -71,7 +76,8 @@
         <div class="flex space-x-12 max-md:hidden">
           <button
             type="button"
-            class="inline-flex items-center gap-x-1 font-sans font-normal text-sm leading-6 tracking-tighter hover:text-secondBrand max-md:hidden " id="open-modal-oferta"
+            class="inline-flex py-6 max-md:py-4 max-sm:py-3 items-center gap-x-1 font-sans font-normal text-sm leading-6 tracking-tighter transition duration-150 ease-in hover:text-secondBrand max-md:hidden"
+            id="open-modal-oferta"
             aria-expanded="false"
           >
             <span>Oferta</span>
@@ -94,17 +100,23 @@
             >
               <ul class="flex md:space-x-12 max-md:flex-col max-md:space-y-12">
                 <li>
-                  <a class="hover:text-secondBrand py-1" href="#about"
+                  <a
+                    class="inline-block py-6 max-md:py-4 max-sm:py-3 transition duration-150 ease-in hover:text-secondBrand py-1"
+                    href="#about"
                     >O firmie</a
                   >
                 </li>
                 <li>
-                  <a class="hover:text-secondBrand py-1" href="#realization"
+                  <a
+                    class="inline-block py-6 max-md:py-4 max-sm:py-3 transition duration-150 ease-in hover:text-secondBrand py-1"
+                    href="#realization"
                     >Realizacje</a
                   >
                 </li>
                 <li>
-                  <a class="hover:text-secondBrand py-1" href="#contacts"
+                  <a
+                    class="inline-block py-6 max-md:py-4 max-sm:py-3 transition duration-150 ease-in hover:text-secondBrand py-1"
+                    href="#contacts"
                     >Kontakt</a
                   >
                 </li>
@@ -112,7 +124,7 @@
             </nav>
             <button
               type="button"
-              class="hover:fill-secondBrand hover:text-secondBrand open-modal-search"
+              class="inline-block py-6 max-md:py-4 max-sm:py-3 transition duration-150 ease-in hover:fill-secondBrand hover:text-secondBrand open-modal-search"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -162,16 +174,16 @@
                   <ul class="lg:flex gap-x-9 sm:mt-[36px] lg:mt-[72px]">
                     <li>
                       <a
-                        href="#"
-                        class="inline-flex rounded-full lg:px-6 sm:px-4 lg:py-3 sm:py-2 bg-brand border border-transparent font-sans lg:text-base sm:text-sm text-modalBg leading-1.5 cursor-pointer hover:bg-secondBrand hover:border-secondBrand"
+                        href="#contacts"
+                        class="inline-flex rounded-full lg:px-6 sm:px-4 lg:py-3 sm:py-2 bg-brand border border-transparent font-sans lg:text-base sm:text-sm text-modalBg leading-1.5 cursor-pointer transition duration-150 ease-in hover:bg-secondBrand hover:border-secondBrand"
                       >
                         Skontaktuj się z nami
                       </a>
                     </li>
                     <li class="max-lg:mt-6">
                       <a
-                        href="#"
-                        class="inline-flex rounded-full inline-flex items-center gap-x-2 lg:px-6 sm:px-4 lg:py-3 sm:py-2 bg-nhfysparent border dorder-brand font-sans lg:text-base sm:text-sm text-brand leading-1.5 cursor-pointer hover:border-secondBrand hover:text-secondBrand"
+                        href="#realization"
+                        class="inline-flex rounded-full inline-flex items-center gap-x-2 lg:px-6 sm:px-4 lg:py-3 sm:py-2 bg-nhfysparent border dorder-brand font-sans lg:text-base sm:text-sm text-brand leading-1.5 cursor-pointer transition duration-150 ease-in hover:border-secondBrand hover:text-secondBrand"
                       >
                         <span>Zobacz nasze realizacje</span>
                         <svg
@@ -306,7 +318,8 @@
       >
         <div class="container">
           <h2
-            class="font-sans text-xs font-normal text-brand leading-normal tracking-tighter searchtag" id="-oferta-"
+            class="font-sans text-xs font-normal text-brand leading-normal tracking-tighter searchtag"
+            id="-oferta-"
           >
             Oferta
           </h2>
@@ -355,7 +368,7 @@
               </div>
               <a
                 href="#"
-                class="py-2 inline-flex items-center gap-x-3 py-1 font-sans text-base text-brand font-normal leading-normal border-b hover:text-secondBrand hover:border-b-secondBrand"
+                class="py-2 inline-flex items-center gap-x-3 py-1 font-sans text-base text-brand font-normal leading-normal border-b transition duration-150 ease-in hover:text-secondBrand hover:border-b-secondBrand"
                 ><span>Dowiedz się więcej</span>
                 <svg
                   width="16"
@@ -396,7 +409,7 @@
               </div>
               <a
                 href="#"
-                class="py-2 inline-flex items-center gap-x-3 py-1 font-sans text-base text-brand font-normal leading-normal border-b hover:text-secondBrand hover:border-b-secondBrand"
+                class="py-2 inline-flex items-center gap-x-3 py-1 font-sans text-base text-brand font-normal leading-normal border-b hover:text-secondBrand transition duration-150 ease-in hover:border-b-secondBrand"
                 ><span>Dowiedz się więcej</span>
                 <svg
                   width="16"
@@ -437,7 +450,7 @@
               </div>
               <a
                 href="#"
-                class="py-2 inline-flex items-center gap-x-3 py-1 font-sans text-base text-brand font-normal leading-normal border-b hover:text-secondBrand hover:border-b-secondBrand"
+                class="py-2 inline-flex items-center gap-x-3 py-1 font-sans text-base text-brand font-normal leading-normal border-b transition duration-150 ease-in hover:text-secondBrand hover:border-b-secondBrand"
                 ><span>Dowiedz się więcej</span>
                 <svg
                   width="16"
@@ -487,7 +500,8 @@
             class="lg:w-1/2 py-[60px] lg:py-[135px] lg:pl-[160px] lg:pr-[92px]"
           >
             <h2
-              class="font-sans text-xs font-normal text-primaryBg leading-normal tracking-tighter searchtag" id="-o-firmie-"
+              class="font-sans text-xs font-normal text-primaryBg leading-normal tracking-tighter searchtag"
+              id="-o-firmie-"
             >
               O firmie
             </h2>
@@ -513,7 +527,7 @@
             </p>
             <a
               href="#"
-              class="mt-[39px] lg:mt-[70px] inline-flex rounded-full inline-flex items-center gap-x-2 lg:px-6 sm:px-4 lg:py-3 sm:py-2 bg-nhfysparent border dorder-primaryBg font-sans lg:text-base sm:text-sm text-primaryBg leading-1.5 cursor-pointer hover:border-secondBrand hover:text-secondBrand"
+              class="mt-[39px] lg:mt-[70px] inline-flex rounded-full inline-flex items-center gap-x-2 lg:px-6 sm:px-4 lg:py-3 sm:py-2 bg-nhfysparent border dorder-primaryBg font-sans lg:text-base sm:text-sm text-primaryBg leading-1.5 cursor-pointer transition duration-150 ease-in hover:border-secondBrand hover:text-secondBrand"
             >
               <span> Poznaj nas bliżej </span>
               <svg
@@ -539,7 +553,8 @@
       >
         <div class="container">
           <h2
-            class="font-sans text-xs font-normal text-brand leading-normal tracking-tighter searchtag" id="-realizacje-"
+            class="font-sans text-xs font-normal text-brand leading-normal tracking-tighter searchtag"
+            id="-realizacje-"
           >
             Realizacje
           </h2>
@@ -567,7 +582,7 @@
           <button
             type="button"
             id="rollGalery"
-            class="inline-flex rounded-full inline-flex items-center gap-x-2 lg:px-6 sm:px-4 lg:py-3 sm:py-2 bg-nhfysparent border dorder-textColor font-sans lg:text-base sm:text-sm text-textColor leading-1.5 cursor-pointer hover:border-secondBrand hover:text-secondBrand pointer-events-auto"
+            class="transition duration-150 ease-in inline-flex rounded-full inline-flex items-center gap-x-2 lg:px-6 sm:px-4 lg:py-3 sm:py-2 bg-nhfysparent border dorder-textColor font-sans lg:text-base sm:text-sm text-textColor leading-1.5 cursor-pointer hover:border-secondBrand hover:text-secondBrand pointer-events-auto"
           >
             <span>Rozwiń</span>
             <svg
@@ -595,12 +610,13 @@
           >
             <h3
               class="font-heading font-normal text-xl lg:text-4xl text-primaryBg leading-tight lg:tracking-[-2px]"
+              id="instagramie."
             >
               Zostańmy w kontakcie!<br />
               Znajdziesz nas na
               <span
-                class="font-sans font-medium text-xl md:text-4xl text-primaryBg italic leading-tight tracking-[1px] searchtag" id="-instagramie.-"
-                >Instagramie.</span
+                class="font-sans font-medium text-xl md:text-4xl text-primaryBg italic leading-tight tracking-[1px] searchtag"
+                >Instagramie</span
               >
             </h3>
             <div class="max-md:mt-6">
@@ -614,7 +630,7 @@
                 href="https://www.instagram.com/"
                 target="_blank"
                 rel="noopener nofollow noreferrer"
-                class="mt-6 inline-flex justify-items-center rounded-full lg:px-6 sm:px-4 lg:py-2.5 sm:py-2 bg-primaryBg border border-transparent font-sans lg:text-base text-brand sm:text-sm leading-normal cursor-pointer hover:bg-secondBrand hover:border-secondBrand hover:text-modalBg"
+                class="mt-6 inline-flex justify-items-center rounded-full lg:px-6 sm:px-4 lg:py-2.5 sm:py-2 bg-primaryBg border border-transparent font-sans lg:text-base text-brand sm:text-sm leading-normal cursor-pointer hover:bg-secondBrand transition duration-150 ease-in hover:border-secondBrand hover:text-modalBg"
               >
                 Instagram
               </a>
@@ -627,7 +643,7 @@
       <div class="container py-[40px] lg:py-[80px]">
         <div class="flex justify-between items-start">
           <a
-            class="text-primaryBg hover:text-brand py-2 lg:py-3"
+            class="text-primaryBg transition duration-150 ease-in hover:text-brand py-2 lg:py-3"
             href="./index.html"
           >
             <svg
@@ -651,7 +667,7 @@
             </p>
             <a
               href="#"
-              class="inline-block rounded-full max-md:mb-8 md:mb-8 md:mt-4 lg:my-0 px-4 lg:px-6 py-2 lg:py-3 bg-brand border border-transparent font-sans lg:text-base sm:text-sm text-primaryBg leading-1.5 cursor-pointer hover:bg-secondBrand hover:border-secondBrand"
+              class="inline-block rounded-full max-md:mb-8 md:mb-8 md:mt-4 lg:my-0 px-4 lg:px-6 py-2 lg:py-3 bg-brand border border-transparent font-sans lg:text-base sm:text-sm text-primaryBg leading-1.5 cursor-pointer transition duration-150 ease-in hover:bg-secondBrand hover:border-secondBrand"
             >
               Skontaktuj się z nami
             </a>
@@ -666,7 +682,8 @@
                 href="http://contacts.google.com/"
                 target="_blank"
                 rel="noopener nofollow noreferrer"
-                class="py-2 font-sans font-normsl text-xs md:text-sm text-primaryBg leading-normal tracking-[-0.14px] cursor-pointer hover:text-secondBrand searchtag" id="-kontakt-"
+                class="py-2 font-sans font-normsl text-xs md:text-sm text-primaryBg leading-normal tracking-[-0.14px] cursor-pointer transition duration-150 ease-in hover:text-secondBrand searchtag"
+                id="-kontakt-"
               >
                 Kontakt
               </a>
@@ -676,7 +693,7 @@
                 href="https://www.instagram.com/"
                 target="_blank"
                 rel="noopener nofollow noreferrer"
-                class="py-2 font-sans font-normsl text-xs md:text-sm text-primaryBg leading-normal tracking-[-0.14px] cursor-pointer hover:text-secondBrand"
+                class="py-2 font-sans font-normsl text-xs md:text-sm text-primaryBg leading-normal tracking-[-0.14px] cursor-pointer transition duration-150 ease-in hover:text-secondBrand"
               >
                 Instagram
               </a>
@@ -686,7 +703,8 @@
                 href="https://www.facebook.com/"
                 target="_blank"
                 rel="noopener nofollow noreferrer"
-                class="py-2 font-sans font-normsl text-xs md:text-sm text-primaryBg leading-normal tracking-[-0.14px] cursor-pointer hover:text-secondBrand searchtag" id="-facebook-"
+                class="py-2 font-sans font-normsl text-xs md:text-sm text-primaryBg leading-normal tracking-[-0.14px] cursor-pointer transition duration-150 ease-in hover:text-secondBrand searchtag"
+                id="-facebook-"
               >
                 Facebook
               </a>
@@ -696,7 +714,8 @@
                 href="https://www.linkedin.com/"
                 target="_blank"
                 rel="noopener nofollow noreferrer"
-                class="py-2 font-sans font-normsl text-xs md:text-sm text-primaryBg leading-normal tracking-[-0.14px] cursor-pointer hover:text-secondBrand searchtag" id="-linkedin-"
+                class="py-2 font-sans font-normsl text-xs md:text-sm text-primaryBg leading-normal tracking-[-0.14px] cursor-pointer transition duration-150 ease-in hover:text-secondBrand searchtag"
+                id="-linkedin-"
               >
                 LinkedIn
               </a>
@@ -705,14 +724,14 @@
           <ul class="lg:flex gap-12">
             <li>
               <a
-                class="py-2 font-sans font-normsl text-xs md:text-sm text-primaryBg leading-normal tracking-[-0.14px] cursor-pointer hover:text-secondBrand"
+                class="py-2 font-sans font-normsl text-xs md:text-sm text-primaryBg leading-normal tracking-[-0.14px] cursor-pointer transition duration-150 ease-in hover:text-secondBrand"
                 href="tel:+480-000-000"
                 >+480-000-000</a
               >
             </li>
             <li>
               <a
-                class="py-2 font-sans font-normsl text-xs md:text-sm text-primaryBg leading-normal tracking-[-0.14px] cursor-pointer hover:text-secondBrand"
+                class="py-2 font-sans font-normsl text-xs md:text-sm text-primaryBg leading-normal tracking-[-0.14px] cursor-pointer transition duration-150 ease-in hover:text-secondBrand"
                 href="mailto:giarddesign@kontakt.pl"
                 >giarddesign@kontakt.pl</a
               >
@@ -735,7 +754,7 @@
               href="https://adrespect.pl/"
               target="_blank"
               rel="noopener nofollow noreferrer"
-              class="hover:scale-105"
+              class="transition duration-150 ease-in hover:scale-105"
               ><svg
                 class="sm:w-[80px] sm:h-[20px] md:w-[113px] md:h-[24px]"
                 viewBox="0 0 113 24"
@@ -765,26 +784,44 @@
       </div>
     </footer>
 
+    <!--Scroll button-->
+    <button
+      type="button" id="scrollBtn"
+      class="fixed z-50 bottom-8 right-8 cursor-pointer transition duration-150 ease-in hidden"
+    >
+      <img class="w-10 h-10 md:w-11 md:h-11 lg:w-12 lg:h-12" src="./src/images/hero/iconArrow.png" alt="move to top"/>
+    </button>
+
     <!--Modal search form-->
     <div class="relative">
-      <div class="fixed inset-0 flex items-center justify-center z-50 hidden" id="backdrop-modal-search">
-        <div class="fixed inset-0 backdrop-blur-xl bg-white/30" id="backdropBlur-modal-search">
-        </div>
+      <div
+        class="fixed inset-0 flex items-center justify-center z-50 hidden"
+        id="backdrop-modal-search"
+      >
         <div
-          class="absolute left-1/2 z-10 mt-5 flex w-screen max-w-max -translate-x-1/2 px-4 hidden" id="modal-search"
+          class="fixed inset-0 backdrop-blur-xl bg-white/30"
+          id="backdropBlur-modal-search"
+        ></div>
+        <div
+          class="absolute left-1/2 z-10 mt-5 flex w-screen max-w-max -translate-x-1/2 px-4 hidden"
+          id="modal-search"
         >
           <div
             class="w-screen max-w-md flex-auto overflow-hidden rounded-3xl bg-modalBg text-sm leading-6 shadow-lg"
           >
             <div class="p-4 pt-8 relative">
-              <button type="button" class="absolute right-3 top-3 close-button" id="close-modal-search">
+              <button
+                type="button"
+                class="absolute right-3 top-3 close-button"
+                id="close-modal-search"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="18"
                   height="18"
                   viewBox="0 0 24 24"
                   fill="currentColor"
-                  class="hover:text-secondBrand"
+                  class="transition duration-150 ease-in hover:text-secondBrand"
                 >
                   <path
                     stroke-linecap="round"
@@ -799,7 +836,7 @@
                   onSubmit=""
                 >
                   <label htmlFor="searchField"></label>
-                  <button class="p-2" type="submit">
+                  <div class="p-2">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       class="h-6 w-6"
@@ -813,20 +850,18 @@
                         d="M10 2.25a7.75 7.75 0 1 0 4.924 13.735l5.546 5.545.084.073a.75.75 0 0 0 .976-1.133l-5.545-5.546A7.75 7.75 0 0 0 10 2.25Zm0 1.5a6.25 6.25 0 1 1 0 12.5 6.25 6.25 0 0 1 0-12.5Z"
                       />
                     </svg>
-                  </button>
+                  </div>
                   <input
-                  id="searchInput"
+                    id="searchInput"
                     class="w-full py-2 pl-2 outline-none hover:outline-offset-2 outline-1 rounded-lg"
                     type="text"
                     autocomplete="off"
                     autofocus
                     placeholder="Wyszukiwanie strony..."
                     name="searchField"
-                    value=""
-                    onChange=""
                   />
                 </form>
-                <div id="searchResults"></div>
+                <div class="rounded-lg mt-4" id="searchResults"></div>
               </div>
             </div>
           </div>
@@ -837,27 +872,33 @@
     <!--Modal oferta-->
     <div class="relative">
       <div
-        class="fixed inset-0 flex items-center justify-center z-50 hidden " id="backdrop-modal-oferta"
+        class="fixed inset-0 flex items-center justify-center z-50 hidden"
+        id="backdrop-modal-oferta"
       >
         <div
           class="fixed inset-0 backdrop-blur-xl bg-white/30"
           id="backdropBlur-modal-oferta"
         ></div>
         <div
-          class="absolute left-1/2 z-10 mt-5 flex w-screen max-w-max -translate-x-1/2 px-4 hidden " id="modal-oferta"
+          class="absolute left-1/2 z-10 mt-5 flex w-screen max-w-max -translate-x-1/2 px-4 hidden"
+          id="modal-oferta"
         >
           <div
             class="w-screen max-w-md flex-auto overflow-hidden rounded-3xl bg-modalBg text-sm leading-6 shadow-lg"
           >
             <div class="p-4 pt-8 relative">
-              <button type="button" class="absolute right-3 top-3" id="close-modal-oferta">
+              <button
+                type="button"
+                class="absolute right-3 top-3"
+                id="close-modal-oferta"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="18"
                   height="18"
                   viewBox="0 0 24 24"
                   fill="currentColor"
-                  class="hover:text-secondBrand"
+                  class="transition duration-150 ease-in hover:text-secondBrand"
                 >
                   <path
                     stroke-linecap="round"
@@ -1027,8 +1068,8 @@
             </div>
             <div class="grid grid-cols-1 divide-x divide-gray-900/5 bg-hoverBg">
               <a
-                href="#"
-                class="flex items-center justify-center gap-x-2.5 p-3 font-semibold text-gray-900 hover:text-secondBrand"
+                href="tel:+480-000-000"
+                class="flex items-center justify-center gap-x-2.5 p-3 font-semibold text-gray-900 transition duration-150 ease-in hover:text-secondBrand"
               >
                 <svg
                   class="h-5 w-5 flex-none text-gray-400"
@@ -1058,24 +1099,32 @@
       >
         <nav class="font-sans font-normal text-sm leading-6 tracking-tighter">
           <ul class="flex flex-col">
-            <li class="rounded-lg hover:bg-hoverBg hover:text-secondBrand">
+            <li
+              class="rounded-lg transition duration-150 ease-in hover:bg-hoverBg hover:text-secondBrand"
+            >
               <a class="block p-4 font-medium text-sm menu-item" href="#oferta"
                 >Oferta</a
               >
             </li>
-            <li class="rounded-lg hover:bg-hoverBg hover:text-secondBrand">
+            <li
+              class="rounded-lg transition duration-150 ease-in hover:bg-hoverBg hover:text-secondBrand"
+            >
               <a class="block p-4 font-medium text-sm menu-item" href="#about"
                 >O firmie</a
               >
             </li>
-            <li class="rounded-lg hover:bg-hoverBg hover:text-secondBrand">
+            <li
+              class="rounded-lg transition duration-150 ease-in hover:bg-hoverBg hover:text-secondBrand"
+            >
               <a
                 class="block p-4 font-medium text-sm menu-item"
                 href="#realization"
                 >Realizacje</a
               >
             </li>
-            <li class="rounded-lg hover:bg-hoverBg hover:text-secondBrand">
+            <li
+              class="rounded-lg transition duration-150 ease-in hover:bg-hoverBg hover:text-secondBrand"
+            >
               <a
                 class="block p-4 font-medium text-sm menu-item"
                 href="#contacts"
@@ -1086,7 +1135,7 @@
         </nav>
         <button
           type="button"
-          class="p-4 rounded-lg hover:bg-hoverBg hover:text-secondBrand open-modal-search"
+          class="p-4 rounded-lg transition duration-150 ease-in hover:bg-hoverBg hover:text-secondBrand open-modal-search menu-item"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -1105,7 +1154,8 @@
       </div>
     </div>
 
-    <script src="./src/js/ancors.js"></script>
+    <script src="./src/js/ancors.js" type="module"></script>
+    <script src="./src/js/scrollBtn.js" type="module"></script>
     <script src="./src/js/menu.js" type="module"></script>
     <script src="./src/js/search.js" type="module"></script>
     <script src="./src/js/modals.js" type="module"></script>

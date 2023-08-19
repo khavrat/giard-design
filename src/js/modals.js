@@ -11,7 +11,7 @@
     },
     {
       modal: document.getElementById("modal-search"),
-      openBtn: document.querySelector(".open-modal-search"),
+      openBtn: document.querySelectorAll(".open-modal-search"),
       closeBtn: document.getElementById("close-modal-search"),
       backdrop: document.getElementById("backdrop-modal-search"),
       backdropBlur: document.getElementById("backdropBlur-modal-search"),
@@ -19,7 +19,13 @@
   ];
 
   modalData.forEach((data) => {
-    data.openBtn.addEventListener("click", () => toggleModal(data));
+    if (data.openBtn instanceof NodeList) {
+      data.openBtn.forEach((btn) => {
+        btn.addEventListener("click", () => toggleModal(data));
+      });
+    } else {
+      data.openBtn.addEventListener("click", () => toggleModal(data));
+    }
     data.closeBtn.addEventListener("click", () => toggleModal(data));
     data.backdropBlur.addEventListener("click", (e) =>
       handleBackdropClick(e, data)

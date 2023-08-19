@@ -15,7 +15,16 @@ function handleSearch() {
       const resultItem = document.createElement("a");
       resultItem.href = `#${createSafeId(title)}`;
       resultItem.textContent = title;
-
+      resultItem.classList.add(
+        "block",
+        "p-4",
+        "font-medium",
+        "text-sm",
+        "menu-item",
+        "rounded-lg",
+        "hover:bg-hoverBg",
+        "hover:text-secondBrand"
+      );
       searchResults.appendChild(resultItem);
     }
   });

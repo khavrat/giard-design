@@ -681,6 +681,10 @@ video {
   bottom: 0px;
 }
 
+.bottom-8{
+  bottom: 2rem;
+}
+
 .end-1{
   inset-inline-end: 0.25rem;
 }
@@ -705,6 +709,10 @@ video {
   right: 0.75rem;
 }
 
+.right-8{
+  right: 2rem;
+}
+
 .top-3{
   top: 0.75rem;
 }
@@ -715,10 +723,6 @@ video {
 
 .top-\[55px\]{
   top: 55px;
-}
-
-.top-0{
-  top: 0px;
 }
 
 .isolate{
@@ -920,6 +924,10 @@ video {
   display: none;
 }
 
+.h-10{
+  height: 2.5rem;
+}
+
 .h-11{
   height: 2.75rem;
 }
@@ -954,6 +962,10 @@ video {
 
 .min-h-\[160px\]{
   min-height: 160px;
+}
+
+.w-10{
+  width: 2.5rem;
 }
 
 .w-11{
@@ -1589,11 +1601,6 @@ video {
 .gap-x-9{
   -moz-column-gap: 2.25rem;
        column-gap: 2.25rem;
-}
-
-.gap-x-4{
-  -moz-column-gap: 1rem;
-       column-gap: 1rem;
 }
 
 .space-x-12 > :not([hidden]) ~ :not([hidden]){
@@ -2233,16 +2240,16 @@ video {
      object-fit: scale-down;
 }
 
+.p-2{
+  padding: 0.5rem;
+}
+
 .p-3{
   padding: 0.75rem;
 }
 
 .p-4{
   padding: 1rem;
-}
-
-.p-2{
-  padding: 0.5rem;
 }
 
 .px-0{
@@ -2345,10 +2352,6 @@ video {
 
 .pt-\[60px\]{
   padding-top: 60px;
-}
-
-.pt-4{
-  padding-top: 1rem;
 }
 
 .text-left{
@@ -2800,10 +2803,6 @@ video {
   outline-width: 1px;
 }
 
-.outline-offset-2{
-  outline-offset: 2px;
-}
-
 .ring{
   --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
   --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(3px + var(--tw-ring-offset-width)) var(--tw-ring-color);
@@ -2907,6 +2906,10 @@ video {
 .transition-transform{
   transition-property: transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.duration-150{
   transition-duration: 150ms;
 }
 
@@ -3066,10 +3069,6 @@ video {
   background-color: rgb(101 163 13 / var(--tw-bg-opacity));
 }
 
-.hover\:fill-brand:hover{
-  fill: #1B5B31;
-}
-
 .hover\:fill-secondBrand:hover{
   fill: #65A30D;
 }
@@ -3116,11 +3115,6 @@ video {
 .hover\:before\:text-center:hover::before{
   content: var(--tw-content);
   text-align: center;
-}
-
-.hover\:focus\:bg-hoverBg:focus:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(247 254 231 / var(--tw-bg-opacity));
 }
 
 .focus\:hover\:text-center:hover:focus{
@@ -3276,12 +3270,20 @@ video {
     display: none;
   }
 
+  .md\:h-11{
+    height: 2.75rem;
+  }
+
   .md\:h-\[24px\]{
     height: 24px;
   }
 
   .md\:w-1\/3{
     width: 33.333333%;
+  }
+
+  .md\:w-11{
+    width: 2.75rem;
   }
 
   .md\:w-\[113px\]{
@@ -3347,8 +3349,16 @@ video {
     display: flex;
   }
 
+  .lg\:h-12{
+    height: 3rem;
+  }
+
   .lg\:w-1\/2{
     width: 50%;
+  }
+
+  .lg\:w-12{
+    width: 3rem;
   }
 
   .lg\:w-2\/3{
