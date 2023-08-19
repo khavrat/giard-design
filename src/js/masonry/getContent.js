@@ -46,7 +46,7 @@ async function getContent() {
     new Masonry(galleryContainer, {
       itemSelector: ".masonryItem",
     });
-  }, 600);
+  }, 700);
   // loader.classList.add("hidden");
 }
 
