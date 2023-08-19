@@ -39,15 +39,14 @@
     }
 
     //for modal search
-    const tags = document.querySelectorAll(".searchtag");
+    const searchResults = document.getElementById("searchResults");
 
-    tags.forEach((tag) => {
-      console.log('tag :>> ', tag);
-      tag.addEventListener("click", () => {
-        console.log('click :>> ', 'click');
-        console.log(" modalData[2] :>> ", modalData[2]);
-      });
-    });
+    searchResults.addEventListener("click", () => closeSearchModal());
+
+    function closeSearchModal() {
+      modalData[1].modal.classList.add("hidden");
+      modalData[1].backdrop.classList.add("hidden");
+      body.classList.remove("overflow-hidden");
+    }
   });
-
 })();
