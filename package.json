@@ -2,12 +2,15 @@
   "name": "giard-design",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "homepage": "https://khavrat.github.io/giard-design",
   "scripts": {
     "build-css": "npx tailwindcss -i ./src/input.css -o ./public/output.css ",
     "start": "parcel index.html  && npm run build-css",
-    "build": "parcel build index.html"
+    "build": "parcel build index.html --public-url /giard-design/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khavrat/parcel-project-template.git"
   },
   "keywords": [],
   "author": "",
