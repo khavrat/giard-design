@@ -1,3 +1,5 @@
+import attachImg from "../../images/overall/attach.png"
+  
 const BASE_URL = "https://pixabay.com/api/";
 const API_KEY = "33239789-edeb40e5557373312058accfd";
 const perPage = 6;
@@ -103,8 +105,8 @@ function handleImageClick(e) {
     const modalContent = `
 <div class="absolute top-[-2px] right-[80px] z-10">
   <img class="max-md:hidden"
-    src="./src/images/overall/attach.png"
-    alt=""
+    src="${attachImg}"
+    alt="attach"
     width="40"
     height="40"
   />

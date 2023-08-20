@@ -1,0 +1,62 @@
+      <!--Galery section-->
+      <section
+        class="relative bg-secondaryBg pt-[60px] lg:pt-[120px] pb-[44px]"
+        id="realization"
+      >
+        <div class="container">
+          <h2
+            class="font-sans text-xs font-normal text-brand leading-normal tracking-tighter searchtag"
+            id="-realizacje-"
+          >
+            Realizacje
+          </h2>
+          <h3
+            class="mt-4 font-heading text-xl lg:text-5xl text-textColor font-medium leading-tight tracking-[-1.44px]"
+          >
+            Nasze
+            <span
+              class="font-sans italic text-xl lg:text-5xl text-textColor font-medium leading-tight"
+              >projekty</span
+            >
+          </h3>
+        </div>
+        <!--Loader-->
+        <div class="my-40 flex" id="loader">
+          <div
+            class="relative mx-auto h-28 w-28 animate-[displace_5s_infinite] border border-primaryBg"
+          >
+            <div class="h-14 animate-[flip_5s_infinite] bg-primaryBg"></div>
+          </div>
+        </div>
+
+        <div
+          class="mt-[96px] grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 toggle-value-content open-modal-popup"
+          id="masonry"
+        ></div>
+        <div
+          class="inset-x-0 absolute bottom-0 pt-64 pb-11 flex justify-center bg-gradient-to-t from-secondaryBg dark:from-modalBg"
+          id="smoke"
+        >
+          <button
+            type="button"
+            id="rollGalery"
+            class="transition-all duration-250 ease-in inline-flex rounded-full inline-flex items-center gap-x-2 lg:px-6 sm:px-4 lg:py-3 sm:py-2 bg-nhfysparent border dorder-textColor font-sans lg:text-base sm:text-sm text-textColor leading-1.5 cursor-pointer hover:border-secondBrand hover:text-secondBrand pointer-events-auto"
+          >
+            <span>Rozwiń</span>
+            <svg
+              class="h-5 w-5"
+              id="arrow"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="m16 8.495-.896-.895-6.468 6.477V.5H7.364v13.568L.896 7.6 0 8.495 8.005 16.5 16 8.495Z"
+              />
+            </svg>
+          </button>
+        </div>
+      </section>

@@ -1,0 +1,76 @@
+    <!--Modal search form-->
+    <div class="relative">
+      <div
+        class="fixed inset-0 flex items-center justify-center z-50 hidden"
+        id="backdrop-modal-search"
+      >
+        <div
+          class="fixed inset-0 backdrop-blur-xl bg-white/30"
+          id="backdropBlur-modal-search"
+        ></div>
+        <div
+          class="absolute left-1/2 z-10 mt-5 flex w-screen max-w-max -translate-x-1/2 px-4 hidden"
+          id="modal-search"
+        >
+          <div
+            class="w-screen max-w-md flex-auto overflow-hidden rounded-3xl bg-modalBg text-sm leading-6 shadow-lg"
+          >
+            <div class="p-4 pt-8 relative">
+              <button
+                type="button"
+                class="absolute right-3 top-3 close-button"
+                id="close-modal-search"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="transition-all duration-250 ease-in hover:text-secondBrand"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M4.707 3.293 3.293 4.707 10.586 12l-7.293 7.293 1.414 1.414L12 13.414l7.293 7.293 1.414-1.414L13.414 12l7.293-7.293-1.414-1.414L12 10.586 4.707 3.293z"
+                  />
+                </svg>
+              </button>
+              <div class="group relative">
+                <form
+                  class="w-full flex gap-x-2 rounded-lg p-4 bg-hoverBg"
+                  onSubmit=""
+                >
+                  <label htmlFor="searchField"></label>
+                  <div class="p-2">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-6 w-6"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M10 2.25a7.75 7.75 0 1 0 4.924 13.735l5.546 5.545.084.073a.75.75 0 0 0 .976-1.133l-5.545-5.546A7.75 7.75 0 0 0 10 2.25Zm0 1.5a6.25 6.25 0 1 1 0 12.5 6.25 6.25 0 0 1 0-12.5Z"
+                      />
+                    </svg>
+                  </div>
+                  <input
+                    id="searchInput"
+                    class="w-full py-2 pl-2 outline-none hover:outline-offset-2 outline-1 rounded-lg"
+                    type="text"
+                    autocomplete="off"
+                    autofocus
+                    placeholder="Wyszukiwanie strony..."
+                    name="searchField"
+                  />
+                </form>
+                <div class="rounded-lg mt-4" id="searchResults"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
