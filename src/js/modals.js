@@ -16,6 +16,13 @@
       backdrop: document.getElementById("backdrop-modal-search"),
       backdropBlur: document.getElementById("backdropBlur-modal-search"),
     },
+    {
+      modal: document.getElementById("modal-popup"),
+      openBtn: document.querySelectorAll(".open-modal-popup"),
+      closeBtn: document.getElementById("close-modal-popup"),
+      backdrop: document.getElementById("backdrop-modal-popup"),
+      backdropBlur: document.getElementById("backdropBlur-modal-popup"),
+    },
   ];
 
   modalData.forEach((data) => {

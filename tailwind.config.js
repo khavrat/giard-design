@@ -38,7 +38,18 @@ module.exports = {
       transparent: "transparent",
       textColor: "#111111",
     },
-    extend: {},
+
+    extend: {
+      keyframes: {
+        swing: {
+          "0%": { transform: "rotate(0deg)" },
+          "50%": {
+            transform: "rotate(20deg)",
+          },
+          "100%": { transform: "rotate(5deg)" },
+        },
+      },
+    },
   },
   plugins: [],
 };
