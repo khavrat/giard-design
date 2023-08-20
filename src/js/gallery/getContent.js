@@ -8,7 +8,7 @@ const rollBtn = document.getElementById("rollGalery");
 const arrowIcon = document.getElementById("arrow");
 const smokeBg = document.getElementById("smoke");
 
-// const loader = document.getElementById("loader");
+const loader = document.getElementById("loader");
 
 rollBtn.addEventListener("click", toggleValueContent);
 
@@ -26,7 +26,7 @@ async function fetchImages() {
 }
 
 async function getContent() {
-  // loader.classList.remove("hidden");
+  loader.classList.remove("hidden");
 
   const images = await fetchImages();
 
@@ -47,7 +47,7 @@ async function getContent() {
       itemSelector: ".masonryItem",
     });
   }, 700);
-  // loader.classList.add("hidden");
+  loader.classList.add("hidden");
 }
 
 getContent();
@@ -118,7 +118,7 @@ function handleImageClick(e) {
 <p>Ten piękny park powstał na podstawie projektu znanego nam tylko dobremu człowiekowi. Są rośliny sadzone, o które nie trzeba dbać, więc personel może leżeć tylko na trawniku</p>
 <p class="font-medium my-4">Podobał ci się projekt?</p>
 <div class="flex justify-between">
-  <a href="tel:+480-000-000" class="inline-block rounded-full px-4  py-2  bg-brand border border-transparent font-sans lg:text-base sm:text-sm text-primaryBg leading-1.5 cursor-pointer transition-all duration-300 ease-in hover:bg-secondBrand hover:border-secondBrand">Skontaktuj się z nami</a>
+  <a href="tel:+480-000-000" class="inline-block rounded-full px-4  py-2  bg-brand border border-transparent font-sans lg:text-base sm:text-sm text-primaryBg leading-1.5 cursor-pointer transition-all duration-250 ease-in hover:bg-secondBrand hover:border-secondBrand">Skontaktuj się z nami</a>
 </div>`;
 
     popupContainer.innerHTML = modalContent;

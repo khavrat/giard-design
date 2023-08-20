@@ -43,10 +43,24 @@ module.exports = {
       keyframes: {
         swing: {
           "0%": { transform: "rotate(0deg)" },
-          "50%": {
-            transform: "rotate(20deg)",
-          },
+          "50%": { transform: "rotate(20deg)" },
           "100%": { transform: "rotate(5deg)" },
+        },
+        displace: {
+          "0%": { transform: "rotate(0deg)" },
+          "20%": { transform: "rotate(-90deg)" },
+          "40%": { transform: "rotate(0deg)" },
+          "60%": { transform: "rotate(0deg)" },
+          "80%": { transform: "rotate(90deg)" },
+          "100%": { transform: "rotate(0deg)" },
+        },
+        flip: {
+          "0%": { transform: "rotate(0deg)" },
+          "20%": { transform: "rotate(90deg)" },
+          "40%": { transform: "rotate(0deg)" },
+          "60%": { transform: "rotate(0deg)" },
+          "80%": { transform: "rotate(-90deg)" },
+          "100%": { transform: "rotate(0deg)" },
         },
       },
     },
