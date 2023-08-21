@@ -2,20 +2,22 @@
   "name": "giard-design",
   "version": "1.0.0",
   "description": "",
-  "homepage": "https://khavrat.github.io/giard-design",
+  "homepage": "https://mMark.github.io/popup-design",
   "scripts": {
     "build-css": "npx tailwindcss -i ./src/input.css -o ./public/output.css ",
     "start": "parcel index.html  && npm run build-css",
-    "build": "parcel build index.html --public-url /giard-design/"
+    "build": "parcel build index.html --public-url /popup-design/",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/khavrat/parcel-project-template.git"
+    "url": "git+https://github.com/mMark/parcel-project-template.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "gh-pages": "^6.0.0",
     "parcel": "^2.9.3",
     "parcel-reporter-clean-dist": "^1.0.4",
     "posthtml-include": "^1.7.4",
@@ -25,13 +27,6 @@
     "jquery": "^3.7.0",
     "masonry-layout": "^4.2.2",
     "slick-carousel": "^1.8.1"
-  },
-  "posthtml": {
-    "plugins": {
-      "posthtml-include": {
-        "root": "./"
-      }
-    }
   },
   "browserslist": "> 0.5%, last 2 versions, not dead"
 }
