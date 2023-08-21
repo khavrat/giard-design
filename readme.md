@@ -1,11 +1,11 @@
-# Task
----
+## Task
+
 Create website layout on HTML according to desktop layout. Mobile version interface to create yourself. To stylize use CSS framework to choose: [bootstrap](https://getbootstrap.com/) or [tailwind](https://tailwindcss.com/). Page elements must be functional.
 
 The section of the gallery must be made using the library to choose from: [masonry](https://masonry.desandro.com/), [macyjs](http://macyjs.com/) or other. Photo galleries should run popup. The gallery should  be folded and unfolded.
 
-# Realization
----
+## Realization
+
 - Site adapted for desktop, tablet and mobile versions. 
 - Stylized with CSS framework [tailwind](https://tailwindcss.com/). 
 - Build tool [parcel](https://parceljs.org/) for convenient code functionality.  
