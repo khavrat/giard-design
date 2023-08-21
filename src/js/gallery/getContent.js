@@ -2,7 +2,7 @@ import attachImg from "../../images/overall/attach.png";
 
 const BASE_URL = "https://pixabay.com/api/";
 const API_KEY = "33239789-edeb40e5557373312058accfd";
-const perPage = 6;
+const perPage = 9;
 let currentPage = 1;
 
 const galleryContainer = document.getElementById("projectGallery");
