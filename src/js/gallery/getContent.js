@@ -1,11 +1,11 @@
-import attachImg from "../../images/overall/attach.png"
-  
+import attachImg from "../../images/overall/attach.png";
+
 const BASE_URL = "https://pixabay.com/api/";
 const API_KEY = "33239789-edeb40e5557373312058accfd";
 const perPage = 6;
 let currentPage = 1;
 
-const galleryContainer = document.getElementById("masonry");
+const galleryContainer = document.getElementById("projectGallery");
 const rollBtn = document.getElementById("rollGalery");
 const arrowIcon = document.getElementById("arrow");
 const smokeBg = document.getElementById("smoke");
@@ -66,6 +66,7 @@ async function toggleValueContent(e) {
 
   if (galleryContainer.classList.contains("toggle-value-content")) {
     rollBtn.querySelector("span").textContent = "Rozwiń";
+    rollBtn.setAttribute("aria-expanded", "false");
     smokeBg.classList.add(
       "bg-gradient-to-t",
       "from-secondaryBg",
@@ -76,6 +77,7 @@ async function toggleValueContent(e) {
     toggleCurrentPage();
   } else {
     rollBtn.querySelector("span").textContent = "Wąski";
+    rollBtn.setAttribute("aria-expanded", "true");
     smokeBg.classList.remove(
       "bg-gradient-to-t",
       "from-secondaryBg",
@@ -90,8 +92,7 @@ async function toggleValueContent(e) {
 
 //popup
 
-const gallery = document.getElementById("masonry");
-const popupModal = document.getElementById("modal-popup");
+const gallery = document.getElementById("projectGallery");
 const popupContainer = document.getElementById("popupContainer");
 
 gallery.addEventListener("click", handleImageClick);
