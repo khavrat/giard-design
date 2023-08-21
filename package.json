@@ -6,7 +6,7 @@
   "scripts": {
     "build-css": "npx tailwindcss -i ./src/input.css -o ./public/output.css ",
     "start": "parcel index.html  && npm run build-css",
-    "build": "parcel build index.html --public-url /giard-design/",
+    "build": "parcel index.html --public-url /giard-design/",
     "deploy": "gh-pages -d build"
   },
   "repository": {
