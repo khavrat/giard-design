@@ -5,7 +5,7 @@
   "homepage": "https://khavrat.github.io/giard-design",
   "scripts": {
     "build-css": "npx tailwindcss -i ./src/input.css -o ./public/output.css ",
-    "start": "parcel index.html  && npm run build-css",
+    "start": "npm run build-css && parcel index.html",
     "build": "parcel build index.html --public-url /giard-design/",
     "deploy": "gh-pages -d dist"
   },

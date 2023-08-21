@@ -627,6 +627,10 @@ video {
   pointer-events: auto;
 }
 
+.\!visible{
+  visibility: visible !important;
+}
+
 .visible{
   visibility: visible;
 }
@@ -649,6 +653,10 @@ video {
 
 .fixed{
   position: fixed;
+}
+
+.\!absolute{
+  position: absolute !important;
 }
 
 .absolute{
@@ -697,8 +705,8 @@ video {
   inset-inline-end: 0.25rem;
 }
 
-.left-0{
-  left: 0px;
+.end-2{
+  inset-inline-end: 0.5rem;
 }
 
 .left-1\/2{
@@ -723,6 +731,10 @@ video {
 
 .right-8{
   right: 2rem;
+}
+
+.right-\[100px\]{
+  right: 100px;
 }
 
 .right-\[80px\]{
@@ -1073,6 +1085,10 @@ video {
 
 .w-\[100\%\]{
   width: 100%;
+}
+
+.w-\[400px\]{
+  width: 400px;
 }
 
 .w-full{
@@ -2187,6 +2203,11 @@ video {
   border-color: rgb(245 240 236 / var(--tw-border-opacity));
 }
 
+.border-secondBrand{
+  --tw-border-opacity: 1;
+  border-color: rgb(101 163 13 / var(--tw-border-opacity));
+}
+
 .border-transparent{
   border-color: transparent;
 }
@@ -3086,6 +3107,14 @@ video {
   content: var(--tw-content);
 }
 
+.\!\[a-zA-Z\:_\]{
+  a-z-a--z:  !important;
+}
+
+.\[key\:string\]{
+  key: string;
+}
+
 @media not all and (min-width: 1440px){
   .max-lg\:container{
     width: 100%;
@@ -3321,12 +3350,20 @@ video {
     bottom: 3.5rem;
   }
 
+  .max-md\:top-\[52px\]{
+    top: 52px;
+  }
+
   .max-md\:mb-8{
     margin-bottom: 2rem;
   }
 
   .max-md\:mt-6{
     margin-top: 1.5rem;
+  }
+
+  .max-md\:mt-\[52px\]{
+    margin-top: 52px;
   }
 
   .max-md\:hidden{
@@ -3410,12 +3447,20 @@ video {
 }
 
 @media (min-width: 768px){
+  .md\:top-\[72px\]{
+    top: 72px;
+  }
+
   .md\:mb-8{
     margin-bottom: 2rem;
   }
 
   .md\:mt-4{
     margin-top: 1rem;
+  }
+
+  .md\:mt-\[72px\]{
+    margin-top: 72px;
   }
 
   .md\:flex{
@@ -3610,14 +3655,13 @@ video {
     padding-bottom: 120px;
   }
 
-  .lg\:py-\[135px\]{
-    padding-top: 135px;
-    padding-bottom: 135px;
-  }
-
   .lg\:py-\[80px\]{
     padding-top: 80px;
     padding-bottom: 80px;
+  }
+
+  .lg\:pb-0{
+    padding-bottom: 0px;
   }
 
   .lg\:pb-40{
@@ -3638,6 +3682,10 @@ video {
 
   .lg\:pt-\[120px\]{
     padding-top: 120px;
+  }
+
+  .lg\:pt-\[135px\]{
+    padding-top: 135px;
   }
 
   .lg\:pt-\[62px\]{
