@@ -1,3 +1,5 @@
+import axios from 'axios';
+import Masonry from "masonry-layout";
 import attachImg from "../../images/overall/attach.png";
 
 const BASE_URL = "https://pixabay.com/api/";

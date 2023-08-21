@@ -17,9 +17,9 @@ The section of the gallery must be made using the library to choose from: [mason
 - Additional icons for styling are taken from [icons8.com](https://icons8.com/icons/).  
 - Added small, user-friendly functionality, chips like a loader or an anchor, scroll buttons up the page.
 
-![Screenshot части галереи:](./src/images/screenshots/forReadme.png)
+![Screenshot](./src/images/screenshots/forReadme.png)
 
-[Visit site:](https://khavrat.github.io/giard-design/)
+### Visit site: [https://khavrat.github.io/giard-design/](https://khavrat.github.io/giard-design/)
 
 
 
