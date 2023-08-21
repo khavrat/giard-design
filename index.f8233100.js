@@ -575,12 +575,12 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 
 },{}],"jKRqU":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "contentData", ()=>contentData);
 var _axios = require("axios");
 var _axiosDefault = parcelHelpers.interopDefault(_axios);
 var _masonryLayout = require("masonry-layout");
 var _masonryLayoutDefault = parcelHelpers.interopDefault(_masonryLayout);
-var _attachPng = require("../../images/overall/attach.png");
-var _attachPngDefault = parcelHelpers.interopDefault(_attachPng);
 const BASE_URL = "https://pixabay.com/api/";
 const API_KEY = "33239789-edeb40e5557373312058accfd";
 const perPage = 9;
@@ -640,38 +640,8 @@ async function toggleValueContent(e) {
     }
     await getContent();
 }
-//popup
-const gallery = document.getElementById("projectGallery");
-const popupContainer = document.getElementById("popupContainer");
-gallery.addEventListener("click", handleImageClick);
-function handleImageClick(e) {
-    const selectedImage = contentData.find((image)=>image.webformatURL === e.target.src);
-    if (selectedImage) {
-        const modalContent = `
-<div class="absolute top-[-2px] right-[80px] z-10">
-  <img class="max-md:hidden"
-    src="${(0, _attachPngDefault.default)}"
-    alt="attach"
-    width="40"
-    height="40"
-  />
-</div>
-<div class="bg-modalBg mb-[6px] drop-shadow-md rounded-lg md:rotate-[5deg] md:animate-[swing_1s]" ><img src="${selectedImage.webformatURL}" alt="project information" class="w-[100%] h-[250px] md:h-[300px] px-2 pt-2 pb-6 block"/></div>
-<div class="pb-2">  
-  <p class="font-medium">Rok założenia: <span>2020</span></p>
-  <p class="font-medium">Twórcy projektów: <span>Dobrze Człowiek</span></p>
-  <p class="font-medium">Budżet: <span>1 000 000 zł</span></p>
-</div>  
-<p>Ten piękny park powstał na podstawie projektu znanego nam tylko dobremu człowiekowi. Są rośliny sadzone, o które nie trzeba dbać, więc personel może leżeć tylko na trawniku</p>
-<p class="font-medium my-4">Podobał ci się projekt?</p>
-<div class="flex justify-between">
-  <a href="tel:+480-000-000" class="inline-block rounded-full px-4  py-2  bg-brand border border-transparent font-sans lg:text-base sm:text-sm text-primaryBg leading-1.5 cursor-pointer transition-all duration-250 ease-in hover:bg-secondBrand hover:border-secondBrand">Skontaktuj się z nami</a>
-</div>`;
-        popupContainer.innerHTML = modalContent;
-    }
-}
 
-},{"axios":"jo6P5","masonry-layout":"cYDx4","../../images/overall/attach.png":"8l92I","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"jo6P5":[function(require,module,exports) {
+},{"axios":"jo6P5","masonry-layout":"cYDx4","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"jo6P5":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "default", ()=>(0, _axiosJsDefault.default));
@@ -6704,44 +6674,6 @@ exports.default = HttpStatusCode;
     return Item;
 });
 
-},{"dd99bd345459a860":"7rCHo","333b0b16bf4afb3c":"166by"}],"8l92I":[function(require,module,exports) {
-module.exports = require("755cf24f1ce39163").getBundleURL("6932m") + "attach.5f7e1f34.png" + "?" + Date.now();
-
-},{"755cf24f1ce39163":"lgJ39"}],"lgJ39":[function(require,module,exports) {
-"use strict";
-var bundleURL = {};
-function getBundleURLCached(id) {
-    var value = bundleURL[id];
-    if (!value) {
-        value = getBundleURL();
-        bundleURL[id] = value;
-    }
-    return value;
-}
-function getBundleURL() {
-    try {
-        throw new Error();
-    } catch (err) {
-        var matches = ("" + err.stack).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^)\n]+/g);
-        if (matches) // The first two stack frames will be this function and getBundleURLCached.
-        // Use the 3rd one, which will be a runtime in the original bundle.
-        return getBaseURL(matches[2]);
-    }
-    return "/";
-}
-function getBaseURL(url) {
-    return ("" + url).replace(/^((?:https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/.+)\/[^/]+$/, "$1") + "/";
-}
-// TODO: Replace uses with `new URL(url).origin` when ie11 is no longer supported.
-function getOrigin(url) {
-    var matches = ("" + url).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^/]+/);
-    if (!matches) throw new Error("Origin not found");
-    return matches[0];
-}
-exports.getBundleURL = getBundleURLCached;
-exports.getBaseURL = getBaseURL;
-exports.getOrigin = getOrigin;
-
-},{}]},["ddFtd","jKRqU"], "jKRqU", "parcelRequire3110")
+},{"dd99bd345459a860":"7rCHo","333b0b16bf4afb3c":"166by"}]},["ddFtd","jKRqU"], "jKRqU", "parcelRequire3110")
 
 //# sourceMappingURL=index.f8233100.js.map

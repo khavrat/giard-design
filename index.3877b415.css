@@ -734,6 +734,10 @@ img, video {
   height: 3.5rem;
 }
 
+.h-2 {
+  height: .5rem;
+}
+
 .h-28 {
   height: 7rem;
 }
@@ -3003,8 +3007,8 @@ img, video {
     bottom: 3.5rem;
   }
 
-  .max-md\:top-\[48px\] {
-    top: 48px;
+  .max-md\:top-\[46px\] {
+    top: 46px;
   }
 
   .max-md\:top-\[52px\] {
@@ -3108,8 +3112,8 @@ img, video {
 }
 
 @media (width >= 768px) {
-  .md\:top-\[68px\] {
-    top: 68px;
+  .md\:top-\[66px\] {
+    top: 66px;
   }
 
   .md\:top-\[72px\] {
