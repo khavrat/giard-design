@@ -2,16 +2,16 @@
   "name": "giard-design",
   "version": "1.0.0",
   "description": "",
-  "homepage": "https://mMark.github.io/popup-design",
+  "homepage": "https://khavrat.github.io/giard-design",
   "scripts": {
     "build-css": "npx tailwindcss -i ./src/input.css -o ./public/output.css ",
     "start": "parcel index.html  && npm run build-css",
-    "build": "parcel build index.html --public-url /popup-design/",
+    "build": "parcel build index.html --public-url /giard-design/",
     "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mMark/parcel-project-template.git"
+    "url": "git+https://github.com/khavrat/parcel-project-template.git"
   },
   "keywords": [],
   "author": "",
