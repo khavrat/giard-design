@@ -574,7 +574,11 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 }
 
 },{}],"8lhVu":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "toggleVisibleBtnByMenu", ()=>toggleVisibleBtnByMenu);
 const scrollBtn = document.getElementById("scrollBtn");
+const menu = document.querySelector("#menu");
 scrollBtn.addEventListener("click", scrollUp);
 function scrollUp() {
     window.scrollTo({
@@ -586,7 +590,11 @@ window.addEventListener("scroll", ()=>{
     if (window.scrollY > window.innerHeight) scrollBtn.classList.remove("hidden");
     else scrollBtn.classList.add("hidden");
 });
+function toggleVisibleBtnByMenu() {
+    if (menu.classList.contains("hidden")) scrollBtn.classList.remove("hidden");
+    else scrollBtn.classList.add("hidden");
+}
 
-},{}]},["5TX6D","8lhVu"], "8lhVu", "parcelRequire3110")
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["5TX6D","8lhVu"], "8lhVu", "parcelRequire3110")
 
 //# sourceMappingURL=index.463852f9.js.map
