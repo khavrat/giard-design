@@ -1,2 +1,0 @@
-!function(){let e=document.querySelector("#burger-menu"),t=document.querySelector("#open-menu"),d=document.querySelector("#close-menu"),c=document.querySelector("#menu"),n=document.querySelectorAll(".menu-item");e.addEventListener("click",()=>{c.classList.toggle("hidden"),t.classList.toggle("hidden"),d.classList.toggle("hidden")}),n.forEach(e=>{e.addEventListener("click",()=>{c.classList.add("hidden"),t.classList.remove("hidden"),d.classList.add("hidden")})})}();
-//# sourceMappingURL=index.b84caced.js.map

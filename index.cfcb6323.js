@@ -1,2 +1,0 @@
-const e=document.querySelector("#burger-menu"),d=document.querySelector("#open-menu"),t=document.querySelector("#close-menu"),c=document.querySelector("#menu"),n=document.querySelectorAll(".menu-item");e.addEventListener("click",()=>{c.classList.toggle("hidden"),d.classList.toggle("hidden"),t.classList.toggle("hidden")}),n.forEach(e=>{e.addEventListener("click",()=>{c.classList.add("hidden"),d.classList.remove("hidden"),t.classList.add("hidden")})});
-//# sourceMappingURL=index.cfcb6323.js.map
