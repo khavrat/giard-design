@@ -1019,6 +1019,10 @@ video {
   height: 3.5rem;
 }
 
+.h-2{
+  height: 0.5rem;
+}
+
 .h-28{
   height: 7rem;
 }
